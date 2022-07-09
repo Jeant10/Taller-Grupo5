@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-color: var(--Pale-blue);
+}
+
+.card{
+    width: 449px;
+    height: 650px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 70px auto;
+    background-color: var(--Very-pale-blue);
+}
+
+.card__first-section__image{
+    width: 100%;
+}
+
+.card__second-section__head{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: var(--Dark-blue);
+    font-weight: 900;
+}
+
+.card__second-section__description{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: var(--Desaturated-blue);
+    margin-bottom: 20px;
+    
+}
+
+.card__second-section__price{
+    background-color: var(--Pale-blue);
+    border-radius: 12px;
+    display: flex;
+    gap: 16px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.card__second-section__price__music-icon{
+    margin-left: 10px;
+}
+
+.card__second-section__price__plan-title{
+    color: var(--Dark-blue);
+    font-weight: 900;
+}
+
+.card__second-section__price__plan-price{
+    color: var(--Desaturated-blue)
+}
+
+.card__second-section__button-pay{
+    background-color: var(--Bright-blue);
+    align-content: center;
+    width: 369px;
+    height: 40px;
+    border: none;
+    border-radius: 9px;
+    color: var(--Very-pale-blue);
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.card__second-section__button-pay:hover{
+    cursor: pointer;
+}
+
+.card__second-section__cancel-pay{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1em;
+    color: var(--Desaturated-blue)
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
