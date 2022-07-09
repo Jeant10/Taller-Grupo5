@@ -6,6 +6,7 @@
     --Very-pale-blue: hsl(225, 100%, 98%);
     --Desaturated-blue: hsl(224, 23%, 55%);
     --Dark-blue: hsl(223, 47%, 23%);
+    --Pale-green: hsl(0, 0%, 95%);
 }
 
 *{
@@ -22,7 +23,7 @@ body{
 
 .card{
     width: 449px;
-    height: 650px;
+    height: 662px;
     border-radius: 12px;
     overflow: hidden;
     margin: 70px auto;
@@ -51,7 +52,7 @@ body{
 }
 
 .card__second-section__price{
-    background-color: var(--Pale-blue);
+    background-color: var(--Pale-green);
     border-radius: 12px;
     display: flex;
     gap: 16px;
@@ -59,20 +60,41 @@ body{
     margin-right: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
-    align-items: center;
 }
 
 .card__second-section__price__music-icon{
     margin-left: 10px;
+    height:85px;
+    width:85px;
+    background:#c7c7c7;
+    -moz-border-radius:50px;
+    -webkit-border-radius:50px;
+    border-radius:50px;
 }
 
 .card__second-section__price__plan-title{
     color: var(--Dark-blue);
-    font-weight: 900;
+    font-weight: 900; 
+    white-space: nowrap; 
+    position: relative;
+    top:18px; 
+    left: 15px;
 }
 
 .card__second-section__price__plan-price{
-    color: var(--Desaturated-blue)
+    color: var(--Desaturated-blue);
+    position: relative;
+    top:40px;
+    left: -95px;
+}
+
+.card__second-section__price__plan-change{
+    color: var(--Bright-blue);
+    text-decoration: underline;
+    position: relative;
+    top:25px;
+    bottom: 25px;
+    left: -25px;
 }
 
 .card__second-section__button-pay{
@@ -85,7 +107,7 @@ body{
     color: var(--Very-pale-blue);
     display: block;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 28px;
     font-size: 13px;
     font-weight: 700;
 }
